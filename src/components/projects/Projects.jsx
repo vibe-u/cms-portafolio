@@ -3,7 +3,7 @@ const Projects = () => {
         <section id="portfolio">
             <h2>Proyectos</h2>
             <p>Aquí se listarán los proyectos desarrollados por el grupo.</p>
-            <p><strong>https://vibe-u.netlify.app/</strong></p>
+            <p><strong><a href="https://vibe-u.netlify.app/" target="_blank">https://vibe-u.netlify.app/</a></strong></p>
         </section>
     );
 };
