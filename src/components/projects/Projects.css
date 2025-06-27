@@ -1,0 +1,13 @@
+.projects__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects__text {
+    color: #1e293b;
+    font-size: 1rem;
+}
+
+.projects__text strong {
+    color: var(--secondary);
+}

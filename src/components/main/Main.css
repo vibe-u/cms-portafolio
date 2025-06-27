@@ -1,0 +1,33 @@
+.principal {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.principal__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease;
+}
+
+.principal__description {
+    font-size: 1.2rem;
+    color: #e0f2fe;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: var(--light);
+    color: var(--primary);
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+    color: white;
+}
