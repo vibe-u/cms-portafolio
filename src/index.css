@@ -19,8 +19,8 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #f1f5f9, #e2e8f0);
-  color: var(--primary);
+  background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
+  color: var(--light);
   line-height: 1.7;
   transition: background var(--transition), color var(--transition);
 }
@@ -34,16 +34,17 @@ section {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
-  background: white;
+  background: #1e293b;
   border-radius: var(--radius);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.8s ease-out;
-  transition: box-shadow var(--transition);
+  transition: box-shadow var(--transition), background var(--transition);
 }
 
 section:hover {
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
+
 
 h2 {
   font-size: 2.4rem;
@@ -51,18 +52,27 @@ h2 {
   margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
+
 
 h2::after {
   content: '';
   position: absolute;
-  width: 40%;
-  height: 4px;
-  background-color: var(--accent);
-  left: 30%;
-  bottom: -10px;
+  width: 50%;
+  height: 3px;
+  background-color: var(--secondary);
+  left: 25%;
+  bottom: -12px;
   border-radius: 2px;
 }
+p {
+  font-size: 1.1rem;
+  color: var(--light);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
 
 @keyframes fadeIn {
   from {
