@@ -3,8 +3,10 @@
 :root {
   --primary: #0f172a;
   --secondary: #06b6d4;
-  --light: #f1f5f9;
+  --light: #f8fafc;
   --accent: #e0f2fe;
+  --radius: 1rem;
+  --transition: 0.3s ease-in-out;
 }
 
 * {
@@ -17,9 +19,10 @@
 }
 
 body {
-  background-color: var(--light);
+  background: linear-gradient(to bottom, #f1f5f9, #e2e8f0);
   color: var(--primary);
-  line-height: 1.6;
+  line-height: 1.7;
+  transition: background var(--transition), color var(--transition);
 }
 
 html {
@@ -31,17 +34,45 @@ section {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
-  animation: fadeIn 0.8s ease-in-out;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+  animation: fadeIn 0.8s ease-out;
+  transition: box-shadow var(--transition);
+}
+
+section:hover {
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: var(--secondary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 4px;
+  background-color: var(--accent);
+  left: 30%;
+  bottom: -10px;
+  border-radius: 2px;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 
