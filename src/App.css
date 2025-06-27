@@ -35,6 +35,14 @@
 
 .card {
   padding: 2em;
+  background-color: #334155;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .read-the-docs {
