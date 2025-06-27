@@ -31,14 +31,13 @@ html {
 }
 
 section {
-  padding: 3rem 2rem;
   max-width: 960px;
   margin: 2rem auto;
+  padding: 2rem 1.5rem;
   background: var(--accent);
   border-left: 6px solid var(--secondary);
   border-radius: var(--radius);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   animation: fadeIn 0.8s ease-out;
 }
 
@@ -85,6 +84,18 @@ p {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: var(--radius);
+}
+.hero {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 @keyframes fadeIn {
