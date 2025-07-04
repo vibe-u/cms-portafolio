@@ -1,6 +1,6 @@
 import './Projects.css';
 
-import vibeuImg from '../../assets/logo-vibe-u.png'; // Asegúrate de tener esta imagen en tu carpeta assets
+import vibeuImg from '../../assets/logo-vibe-u.png'; 
 
 const Projects = () => {
     return (
@@ -14,7 +14,7 @@ const Projects = () => {
                         <h4 className="card__title">Vibe-U</h4>
                         <p className="card__description">Plataforma que pone a la universidad en modo social.</p>
                         <div className="card__buttons">
-                            <a href="https://github.com/Kyara2005/Vibe-U" target="_blank" className="card__category">Repository</a>
+                            <a href="https://github.com/Kyara2005/Vibe_U-landing_page.git" target="_blank" className="card__category">Repositorio</a>
                             <a href="https://vibe-u.netlify.app/" target="_blank" className="card__category">Demo</a>
                         </div>
                     </div>
