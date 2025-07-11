@@ -1,5 +1,5 @@
 import './About.css';
-import girl from '../../assets/girl.svg'; // le subes la imagen tu
+import grupo from '../../assets/grupo-chicos.jpg';
 
 const About = () => {
     return (
@@ -19,7 +19,7 @@ const About = () => {
             </div>
 
             <figure className="about__figure">
-                <img src={girl} className="about__picture" alt="chica-code" />
+                <img src={grupo} className="about__picture" alt="grupo-code" />
             </figure>
         </section>
     );

@@ -4,6 +4,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Habilidades from "./pages/Habilidades";
+import Contacto from "./pages/Contacto";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="register" element={<Register />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="habilidades" element={<Habilidades />} />
+        <Route path="contacto" element={<Contacto />} />
       </Routes>
     </BrowserRouter>
   )
