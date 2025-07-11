@@ -1,13 +1,11 @@
-header{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(-20deg, #243b37f5 20%, #523c10c0 100%), url('/src/assets/grupo-chicos.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 15% 0%;
-    color: var(--primary);
-    display: flex;
-    flex-direction: column;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .navbar__container {
@@ -16,7 +14,6 @@ header{
     margin: 0 auto;
     text-align: center;
 }
-
 
 .navbar__logo {
     margin: 0;
@@ -32,7 +29,7 @@ header{
 
 
 .navbar__menu a {
-    color: white;
+    color: black;
     font-size: 1.2rem;
     font-weight: 600;
     display: block;

@@ -5,8 +5,13 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Habilidades from "./pages/Habilidades";
 import Contacto from "./pages/Contacto";
+import { useEffect } from "react";
+import AOS from 'aos';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <BrowserRouter>

@@ -1,33 +1,16 @@
-.principal {
-    text-align: center;
-    padding: 4rem 2rem;
+.mySwiper{
+    height: 400px;
 }
-
-.principal__title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 1rem;
-    animation: fadeIn 1s ease;
+.swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.principal__description {
-    font-size: 1.2rem;
-    color: #e0f2fe;
-    margin-bottom: 2rem;
+.swiper-button-next,
+.swiper-button-prev{
+    color: red;
 }
-
-.btn {
-    background-color: var(--light);
-    color: var(--primary);
-    padding: 0.75rem 2rem;
-    border-radius: 50px;
-    border: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: var(--secondary);
-    color: white;
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active{
+    background-color: red;
 }

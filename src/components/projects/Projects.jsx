@@ -4,11 +4,11 @@ import vibeuImg from '../../assets/logo-vibe-u.png';
 
 const Projects = () => {
     return (
-        <section className="project" id="portfolio">
+        <section className="project" id="portfolio" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <h3 className="project__title">Proyectos</h3>
-            <p className="project__intro">Aquí se listarán los proyectos desarrollados por el grupo.</p>
-            <div className="project__cards">
-                <div className="cards">
+            <p className="project__intro" data-aos="fade-up" data-aos-delay="300">Aquí se listarán los proyectos desarrollados por el grupo.</p>
+            <div className="project__cards" data-aos="fade-down" data-aos-duration="500">
+                <div className="cards" data-aos="fade-up" data-aos-duration="1000">
                     <img src={vibeuImg} className="card__img" alt="Proyecto Vibe-U" />
                     <div className="card">
                         <h4 className="card__title">Vibe-U</h4>

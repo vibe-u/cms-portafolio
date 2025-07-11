@@ -1,4 +1,3 @@
-import { Main } from '../main/Main';
 import './Header.css';
 import { Link } from "react-router";
 
@@ -19,7 +18,6 @@ const Header = () => {
                     <li><Link to="/register">Registrarse</Link></li>
                 </ul>
             </nav>
-            <Main />
         </header>
 
     )

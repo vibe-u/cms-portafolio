@@ -1,11 +1,38 @@
-import './Main.css';
+import banner1 from '../../assets/b1.jpg';
+import banner2 from '../../assets/b2.jpg';
+import banner3 from '../../assets/b3.jpg';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import './Main.css'
 
 export const Main = () => {
     return (
-        <main className='principal'>
-            <h1 className='principal__title'>Bienvenido al portafolio grupal</h1>
-            <p className='principal__description'>Somos un grupo apasionado por la tecnología y el desarrollo de software, comprometidos con aprender y aplicar buenas prácticas para crear aplicaciones útiles y fáciles de mantener. Nos gusta trabajar en equipo, explorar nuevas herramientas y aportar a proyectos que generen impacto real.</p>
-            <a href="#portfolio" className="btn btn__light">Hoja de vida</a>
-        </main>
-    );
-};
+            <>
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay]}
+                    autoplay={{ delay: 3000 }}
+                    navigation
+                    pagination={{ clickable: true }}
+                    loop={true}
+                    className="mySwiper">
+
+                    <SwiperSlide className='swiper'>
+                        <img src={banner1} alt="Slide 1"/>
+                    </SwiperSlide>
+
+                    <SwiperSlide className='swiper'>
+                        <img src={banner2} alt="Slide 2"/>
+                    </SwiperSlide>
+
+                    <SwiperSlide className='swiper'>
+                        <img src={banner3} alt="Slide 3" />
+                    </SwiperSlide>
+                </Swiper>
+            </>
+    )
+}
