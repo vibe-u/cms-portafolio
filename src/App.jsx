@@ -4,10 +4,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Habilidades from "./pages/Habilidades";
-import About from "./components/about/About";
-import Header from "./components/header/Header";
-import Projects from "./components/projects/Projects";
-import Footer from "./components/footer/Footer";
+
 function App() {
 
   return (
@@ -20,13 +17,6 @@ function App() {
         <Route path="habilidades" element={<Habilidades />} />
       </Routes>
     </BrowserRouter>
-    <>
-      <Header/>
-      <About/>
-      <Project/>
-      <Footer/>
-    </>
-
   )
 }
 
