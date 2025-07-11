@@ -3,7 +3,7 @@ import Footer from "../components/footer/Footer"
 import Header from "../components/header/Header"
 import Project from "../components/projects/Projects"
 import { Main } from '../components/main/Main';
-
+import Memes from '../characters/Characters';
 const Landing = () => {
     return (
         <>
@@ -15,7 +15,10 @@ const Landing = () => {
             </div>
                 <About />
                 <Project />
-                <Footer />
+            <div data-aos="fade-down" data-aos-duration="1000">
+                <Memes />
+            </div>
+            <Footer />
         </>
     )
 }
