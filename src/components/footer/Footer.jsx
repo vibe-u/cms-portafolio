@@ -19,6 +19,13 @@ const Footer = () => {
                     <i className="fa-regular fa-envelope"></i>
                     <p className="footer__mail">vibe-u@epn.edu.ec</p>
                 </div>
+                <div className="footer__item">
+                    <p className="footer__subtitle">Api memes:</p>
+
+                    <p className="footer__api">
+                        <a href="https://api.imgflip.com/get_memes" target="_blank" className="link">https://api.imgflip.com/get_memes</a>
+                    </p>
+                </div>
             </div>
             <p className="footer__copy">Derechos reservados &copy; Grupo1</p>
         </footer>
