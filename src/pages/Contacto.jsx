@@ -7,6 +7,7 @@ const Contacto = () => {
             <li>Emilio Gavilánez</li>
             <li>Jhonathan Ruiz</li>
             <li>Kyara Altamirano</li>
+            
         </ul></>
     )
 }
